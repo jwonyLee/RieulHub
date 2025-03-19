@@ -1,10 +1,24 @@
 # RieulHub
 
-- [Tuist](https://tuist.dev)
-- [GitHub Actions](https://github.com/features/actions)
-- [fastlane](https://fastlane.tools)
+## Get Started
 
----
+의존성 설치
+
+```
+tuist install
+```
+
+프로젝트 빌드
+
+```
+tuist generate
+```
+
+프로젝트 구조 수정
+
+```
+tuist edit
+```
 
 ## 해야 할 일
 
@@ -36,3 +50,9 @@
 ### 테스트
 
 - [ ] 코드 커버리지 확인 및 개선
+
+## 사용 기술
+
+- [Tuist](https://tuist.dev)
+- [GitHub Actions](https://github.com/features/actions)
+- [fastlane](https://fastlane.tools)
