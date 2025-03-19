@@ -1,10 +1,10 @@
 import ProjectDescription
 
 let project = Project(
-    name: "App",
+    name: "RieulHub",
     targets: [
         .target(
-            name: "App",
+            name: "RieulHub",
             destinations: .iOS,
             product: .app,
             bundleId: "tech.rieul.RieulHub",
@@ -18,14 +18,14 @@ let project = Project(
             dependencies: []
         ),
         .target(
-            name: "AppTests",
+            name: "RieulHubTests",
             destinations: .iOS,
             product: .unitTests,
             bundleId: "tech.rieul.RieulHubTests",
             infoPlist: .default,
             sources: ["App/Tests/**"],
             resources: [],
-            dependencies: [.target(name: "App")]
+            dependencies: [.target(name: "RieulHub")]
         ),
     ]
 )
