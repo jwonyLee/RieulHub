@@ -24,7 +24,7 @@ tuist edit
 
 ### 프로젝트 설정 및 CI/CD
 
-- [ ] Tuist 설치 및 설정
+- [x] Tuist 설치 및 설정
 - [ ] 프로젝트 폴더 구조 설계 (모듈화 고려)
 - [ ] Tuist 매니페스트 파일 (Project.swift, Workspace.swift) 작성 (모듈 구조 정의)
 - [ ] tuist edit 명령어로 Xcode 프로젝트 생성 확인
