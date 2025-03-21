@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # 수동 실행
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install tuist
+        run: mise install tuist
+
+      - name: tuist install
+        run: tuist install
+
+      - name: tuist generate
+        run: tuist generate
+
+      - name: run test
+        run: fastlane test
