@@ -26,4 +26,4 @@ jobs:
         run: tuist generate
 
       - name: run test
-        run: fastlane test
+        run: fastlane tests
