@@ -16,5 +16,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Install tuist
+        run: mise install tuist
+
+      - name: tuist install
+        run: tuist install
+
+      - name: tuist generate
+        run: tuist generate
